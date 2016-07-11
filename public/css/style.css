@@ -15,7 +15,7 @@ body, html {
     text-align: center;
 }
 
-.toDoListView {
+.toDoListView, .toDoItem {
     margin: auto;
     min-width: 500px;
     border: 1px solid #2075bc;
@@ -44,4 +44,20 @@ body, html {
 .toDoItemLabel:last-child {
     border: none;
     border-radius: 0 0 5px 5px;
+}
+
+.toDoItemTitle {
+    height: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 8px;
+    border-bottom: 1px solid #aaaaaa;
+    box-shadow: 0 0 1px #bebebe;
+    color: #2075bc;
+}
+
+.toDoItemDetails {
+    padding: 10px;
+    min-height: 250px;
 }

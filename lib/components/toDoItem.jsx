@@ -12,12 +12,12 @@ var ToDoITem = React.createClass({
 
     render: function () {
         return (
-            <a href="#" className="toDoItem" onClick={this.loadToDo}>
-                <div className="toDoItemTitle">title....</div>
+            <div href="#" className="toDoItem">
+                <div className="toDoItemTitle"> Title</div>
                 <div className="toDoItemDetails">
                     details.....
                 </div>
-            </a>
+            </div>
         )
     }
 });

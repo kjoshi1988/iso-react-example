@@ -7,6 +7,7 @@ var ReactDOM = require("react-dom/server");
 module.exports = {
     bind: function (app) {
         app.use("/*", function (req, res) {
+            console.log("Got request....", req.originalUrl);
             ReactRouterMatch({routes: reactRoutes, location: req.originalUrl}, function (error, redirectLocation, renderProps) {
 
                 var content = ReactDOM.renderToString(<RouterContext {...renderProps}/>);
